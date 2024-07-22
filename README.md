@@ -21,7 +21,7 @@ ShapeAreaCalcTask - это C# библиотека, предоставляюща
 ### Вычисление площади круга
 
 ```csharp
-using GeometryLibrary;
+using ShapeAreaCalcTask;
 
 var circle = new Circle(5);
 double area = circle.CalculateArea();
@@ -30,7 +30,7 @@ Console.WriteLine($"Площадь круга: {area}");
 
 ### Вычисление площади треугольника
 ```csharp
-using GeometryLibrary;
+using ShapeAreaCalcTask;
 
 var triangle = new Triangle(3, 4, 5);
 double area = triangle.CalculateArea();
@@ -39,7 +39,7 @@ Console.WriteLine($"Площадь треугольника: {area}");
 ### Проверка, является ли треугольник прямоугольным
 
 ```csharp
-using GeometryLibrary;
+using ShapeAreaCalcTask;
 
 var triangle = new Triangle(3, 4, 5);
 bool isRight = triangle.IsRightTriangle();
@@ -48,7 +48,7 @@ Console.WriteLine($"Треугольник прямоугольный: {isRight}
 
 ### Вычисление площади фигуры через общий интерфейс
 ```csharp
-using GeometryLibrary;
+using ShapeAreaCalcTask;
 
 IShape circle = new Circle(5);
 IShape triangle = new Triangle(3, 4, 5);
@@ -64,7 +64,7 @@ Console.WriteLine($"Площадь треугольника: {triangleArea}");
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 
-namespace GeometryLibrary.Tests
+namespace ShapeAreaCalcTask.Tests
 {
     [TestClass]
     public class ShapeTests
